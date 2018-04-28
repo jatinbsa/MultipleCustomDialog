@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:gravity="center"
+            android:fontFamily="sans-serif"
+            android:id="@+id/title"
+            android:background="@drawable/rectangle_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:padding="12dp"
+            android:textSize="@dimen/text_size_secondary"
+            android:textColor="@color/white"
+            android:textStyle="normal" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rectangle_bottom"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:fontFamily="sans-serif"
+                    android:id="@+id/message"
+                    android:layout_margin="12dp"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_size_secondary"
+                    android:text="@string/do_you_really_want_to_delete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/back_style_button"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content">
+
+
+
+                    <TextView
+                        android:fontFamily="sans-serif"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/padding_left"
+                        android:paddingRight="@dimen/padding_right"
+                        android:paddingTop="@dimen/padding_top"
+                        android:paddingBottom="@dimen/padding_bottom"
+                        android:background="@drawable/ripple_back"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="normal"
+                        android:textSize="@dimen/text_size_secondary"
+
+                        android:text="@android:string/cancel"
+                        android:id="@+id/cancel" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+
+                    android:background="@drawable/back_style_button"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:fontFamily="sans-serif"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/padding_left"
+                        android:paddingRight="@dimen/padding_right"
+                        android:paddingTop="@dimen/padding_top"
+                        android:paddingBottom="@dimen/padding_bottom"
+                        android:background="@drawable/ripple_back"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="normal"
+                        android:textSize="@dimen/text_size_secondary"
+                        android:text="Ok"
+                        android:id="@+id/ok" />
+
+                </RelativeLayout>
+                </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

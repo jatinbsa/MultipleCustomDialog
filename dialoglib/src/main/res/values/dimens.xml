@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="text_size_secondary">15dp</dimen>
+    <dimen name="dialog_width">250dp</dimen>
+    <dimen name="padding_left">8dp</dimen>
+    <dimen name="padding_right">8dp</dimen>
+    <dimen name="padding_top">3dp</dimen>
+    <dimen name="padding_bottom">3dp</dimen>
+</resources>

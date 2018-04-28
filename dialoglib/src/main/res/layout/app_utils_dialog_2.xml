@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:gravity="center"
+            android:fontFamily="sans-serif"
+            android:id="@+id/title"
+            android:background="@drawable/rectangle_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:padding="12dp"
+            android:textSize="@dimen/text_size_secondary"
+            android:textColor="@color/white"
+            android:textStyle="normal" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_bottom"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:maxLength="@integer/max_length_dialog_input"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:id="@+id/edit_text"
+                    android:layout_margin="16dp"
+                    android:hint="@string/hint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="normal"
+                    android:textSize="@dimen/text_size_secondary"
+                    android:text="@android:string/cancel"
+                    android:id="@+id/cancel" />
+                <TextView
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="normal"
+                    android:textSize="@dimen/text_size_secondary"
+                    android:text="Ok"
+                    android:id="@+id/ok" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

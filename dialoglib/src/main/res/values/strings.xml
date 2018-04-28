@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MultiDialogLib</string>
+    <string name="list_title_name">MyList</string>
+    <string name="there_is_no_saved_playlist">There is no List</string>
+    <string name="title">Title</string>
+    <string name="hint">Hint</string>
+    <string name="do_you_really_want_to_delete">Do you want to really Delete</string>
+
+</resources>
